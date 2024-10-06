@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chessboard</title>
+
+    <style type="text/css">
+      
+
+html
+{
+    background:ghostwhite;
+}
+  body
+  {
+background-color: white;
+width:800px;
+height:800px;
+margin:30px auto;
+  }
+  h1{
+    text-align: center;
+    color: black;
+  }
+
+.row
+{
+    width:100%;
+    height:100px;
+    float:left;
+}
+
+
+.box
+{
+    width:100px;
+    height:100px;
+    float:left;
+}
+
+.bgcolor
+{
+    background-color: black;
+}
+.sze1
+{
+  text-align: center;
+  font-size: 47px;
+  color: black;
+}
+.sze2
+{
+  text-align: center;
+  font-size: 47px;
+  color: white;
+}
+.sze3
+{
+  text-align: center;
+  font-size: 47px;
+  color: black;
+}
+.sze4
+{
+  text-align: center;
+  font-size: 47px;
+  color: white;
+}
+.sze5
+{
+  text-align: center;
+  font-size: 47px;
+  color: black;
+}
+.sze6
+{
+  text-align: center;
+  font-size: 47px;
+  color: white;
+}
+.sze7
+{
+  text-align: center;
+  font-size: 47px;
+  color: black;
+}
+.sze8
+{
+  text-align: center;
+  font-size: 47px;
+  color: white;
+}
+.siz1
+{
+ text-align: center; 
+font-size:47px;
+color:white;
+}
+.siz2
+{
+ text-align: center; 
+font-size:47px;
+color:black;
+}
+.siz3
+{
+  text-align: center;
+  font-size: 47px;
+  color: white;
+}
+.siz4
+{
+  text-align: center;
+  font-size: 47px;
+  color: black;
+}
+.siz5
+{
+  text-align: center;
+  font-size: 47px;
+  color: white;
+}
+.siz6
+{
+  text-align: center;
+  font-size: 47px;
+  color: black;
+}
+.siz7
+{
+  text-align: center;
+  font-size: 47px;
+  color: white;
+}
+.siz8
+{
+  text-align: center;
+  font-size: 47px;
+  color: black;
+}
+.size1
+{
+ text-align: center;
+ font-size: 40px;
+ 
+}
+.size2
+{
+ text-align: center;
+ font-size: 40px;
+ 
+}
+.size3
+{
+ text-align: center;
+ font-size: 40px;
+ 
+}
+.size4
+{
+ text-align: center;
+ font-size: 40px;
+ 
+}
+.size5
+{
+ text-align: center;
+ font-size: 40px;
+ 
+}
+.size6
+{
+ text-align: center;
+ font-size: 40px;
+ 
+}
+.size7
+{
+ text-align: center;
+ font-size: 40px;
+ 
+}
+.size8
+{
+ text-align: center;
+ font-size: 40px;
+ 
+}
+.sizee1
+{
+  text-align: center;
+  font-size: 47px;
+  color:gray;
+}
+.sizee2
+{
+  text-align: center;
+  font-size: 47px;
+  color:gray;
+}
+.sizee3
+{
+  text-align: center;
+  font-size: 47px;
+  color:gray;
+}
+.sizee4
+{
+  text-align: center;
+  font-size: 47px;
+  color:gray;
+}
+.sizee5
+{
+  text-align: center;
+  font-size: 47px;
+  color:gray;
+}
+.sizee6
+{
+  text-align: center;
+  font-size: 47px;
+  color:grey;
+}
+.sizee7
+{
+  text-align: center;
+  font-size: 47px;
+  color:gray;
+}
+.sizee8
+{
+  text-align: center;
+  font-size: 47px;
+  color:gray;
+}
+
+ </style>
+
+
+</head>
+<body>
+  <h1>CHESS GAME</h1>
+ 
+
+  <!-- Chessboard container -->
+<div id="chessboard"></div>
+    <!--First Row-->
+ <div class="row">
+  <div class="box"><p class="sze1">&#9814;</p></div>
+  <div class="box bgcolor"><p class="sze2">&#9816;</p></div>
+  <div class="box"><p class="sze3">&#9815;</p></div>
+  <div class="box bgcolor"><p class="sze4">&#9812;</p></div>
+  <div class="box"><p class="sze5"> &#9813;</p></div>
+  <div class="box bgcolor"><p class="sze6">&#9815;</p></div>
+  <div class="box"><p class="sze7">&#9816;</p></div>
+  <div class="box bgcolor"><p class="sze8">&#9814;</p></div>
+ </div>
+
+ <!--Second Row-->
+ <div class="row">
+    
+    <div class="box bgcolor"><p class="siz1">&#9817;</p></div>
+    <div class="box"><p class="siz2">&#9817;</p></div>
+    <div class="box bgcolor"><p class="siz3">&#9817;</p></div>
+    <div class="box"><p class="siz4">&#9817;</p></div>
+    <div class="box bgcolor"><p class="siz5">&#9817;</p></div>
+    <div class="box"><p class="siz6">&#9817;</p></div>
+    <div class="box bgcolor"><p class="siz7">&#9817;</p></div>
+    <div class="box"><p class="siz8">&#9817;</p></div>
+   </div>
+
+   <!--Third Row-->
+<div class="row">
+  <div class="box siz1 sze1"></div>
+  <div class="box bgcolor siz2 sze2"></div>
+  <div class="box siz3 sze3"></div>
+  <div class="box bgcolor siz4 sze4"></div>
+  <div class="box siz5 sze5"></div>
+  <div class="box bgcolor siz6 sze6"></div>
+  <div class="box siz7 sze7"></div>
+  <div class="box bgcolor siz8 sze8"></div>
+ </div>
+
+ <!--Fourth Row-->
+ <div class="row">
+      
+  <div class="box bgcolor siz1 sze1"></div>
+  <div class="box siz2 sze2"></div>
+  <div class="box bgcolor siz3 sze3"></div>
+  <div class="box siz4 sze4"></div>
+  <div class="box bgcolor siz5 sze5"></div>
+  <div class="box siz6 sze6"></div>
+  <div class="box bgcolor siz7 sze7"></div>
+  <div class="box siz8 sze8"></div>
+ </div>
+
+<!--Fifth Row-->
+<div class="row">
+  <div class="box siz1 sze1"></div>
+  <div class="box bgcolor siz2 sze2"></div>
+  <div class="box siz3 sze3"></div>
+  <div class="box bgcolor siz4 sze4"></div>
+  <div class="box siz5 sze5"></div>
+  <div class="box bgcolor siz6 sze6"></div>
+  <div class="box siz7 sze7"></div>
+  <div class="box bgcolor siz8 sze8"></div>
+ </div>
+
+ <!--Sixth Row-->
+ <div class="row">
+      
+  <div class="box bgcolor size1 sizee1"></div>
+  <div class="box size2 sizee2"></div>
+  <div class="box bgcolor size3 sizee3"></div>
+  <div class="box size4 sizee4"></div>
+  <div class="box bgcolor size5 sizee5"></div>
+  <div class="box size6 sizee6"></div>
+  <div class="box bgcolor size7 sizee7"></div>
+  <div class="box size7 sizee7"></div>
+ </div>
+  
+   <!--Seventh Row-->
+ <div class="row">
+    <div class="box"><p class="size1">&#9823;</p></div>
+    <div class="box bgcolor"><p class="size2">&#9823;</p></div>
+    <div class="box"><p class="size3">&#9823;</p></div>
+    <div class="box bgcolor"><p class="size4">&#9823;</p></div>
+    <div class="box"><p class="size5">&#9823;</p></div>
+    <div class="box bgcolor"><p class="size6">&#9823;</p></div>
+    <div class="box"><p class="size7">&#9823;</p></div>
+    <div class="box bgcolor"><p class="size8">&#9823;</p></div>
+   </div>
+  
+   <!--Eighth Row-->
+   <div class="row">
+      
+      <div class="box bgcolor"><p class="sizee1">&#9820;</p></div>
+      <div class="box"><p class="sizee2">&#9822;</p></div>
+      <div class="box bgcolor"><p class="sizee3">&#9821;</p></div>
+      <div class="box"><p class="sizee6">&#9818;</p></div>
+      <div class="box bgcolor"><p class="sizee6">&#9819;</p></div>
+      <div class="box"><p class="sizee6">&#9821;</p></div>
+      <div class="box bgcolor"><p class="sizee7">&#9822;</p></div>
+      <div class="box"><p class="sizee8">&#9820;</p></div>
+     </div>
+     <script> 
+      
+    let selectedBox=null;
+
+const boxes =document.querySelectorAll('.box');
+boxes.forEach(box=>{
+    box.addEventListener('click',function(){
+
+        if(selectedBox && this !==selectedBox){
+           if(this.innerHTML ===''){
+            this.innerHTML = selectedBox.innerHTML;
+            selectedBox.innerHTML='';
+            selectedBox=null;
+           }
+        } else if(this.innerHTML !==''){
+            selectedBox=this;
+        }
+    });
+});
+</script>
+  
+</body>
+</html>
